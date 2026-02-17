@@ -35,5 +35,29 @@ for i in weights:
         overload[o_index]=i
         o_index=o_index+1
         valid_entries=valid_entries+1
+name = input("enter your full name:")
+length=0
+for ch in name:
+    if ch!=" ":
+        length=length+1
+
+PLI=length%3
+print("L value:",length)
+print("PLI value:",PLI)
+affected =0
+if PLI==0:
+    for i in range(o_index):
+        invalid_entries[i_index]=overload[i]
+        i_index=i_index+1
+        affected=affected+1
+    o_index=0
+elif PLI==1:
+    affected=v_index
+    v_index=0
+else:
+    affected=v_index+o_index
+    v_index=0
+    o_index=0
+
 
 
