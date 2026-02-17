@@ -58,6 +58,14 @@ else:
     affected=v_index+o_index
     v_index=0
     o_index=0
+print("Total Valid Weights:",valid_entries)
+print("Affected items due to PLI:",affected)
+
+print("Very Light:",very_light[:v_index])
+print("Normal Load:",normal_load[:n_index])
+print("Heavy Load:",heavy_load[:h_index])
+print("Overload:",overload[:o_index])
+print("Invalid Entries:",invalid_entries[:i_index])
 
 
 
