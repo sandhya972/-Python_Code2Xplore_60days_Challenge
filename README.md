@@ -1,25 +1,20 @@
-Day 05 - Smart Transport Load Balancing
-Full Name:Sandhya Yerragudi
-L value (letters excluding spaces): 12
-PLI value: 0
-Applied Rule: Rule A - Move all Overload items to invalid Entries
+Day 06 - Smart Playlist Analyzer
 
-Problem Statement
-Classify package weights into Very Light, Normal, Heavy, Overload, or Invalid entries. Apply personalized logic (PLI) based on the number of letters in the name.
+Problem Statement:
 
-Approach / Logic Used
-Take input weights and classify based on ranges.
-Apply PLI rules based on L % 3.
-Display final categorized weights and counts.
-Test Cases
-Input: [30, -5, 0, 80, 26, 15]
-Output: L value: 12
-PLI value: 0
-Total Valid Weights: 5
-Affected items due to PLI: 1
-Very Light: [0]
-Normal Load: [15]
-Heavy Load: [30, 26]
-Overload: []
-Invalid Entries: [-5, 80]
+Classify a playlist based on songs duration into Too short, TOO long, Repetitive, Balanced, Irregular, or Invalid Playlist.
+
+Approach / Logic Used:
+I created a python program that takes the number of songs and their duartions as input using a list. First, I validated the inputs by checking if any duration is less than or equal to zero and marked the playlist as invalid if found. This i calculated the total duration using sum() to check whether the playlist is Too short or Too long.I checked for repetition by comparing the length of the list with unique values.  Finally ,based on all conditions ,i categorized the playlist and displayed the result.
+Test Cases:
+Input: Enter number of songs: 4
+Enter duration: 180
+Enter duration: 200
+Enter duration: 220
+Enter duration: 210
+Total Duration: 810 seconds
+Songs: 4
+Category: Balanced Playlist
+Recommendation: Good listening session
+
 
