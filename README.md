@@ -6,7 +6,10 @@ Classify a playlist based on songs duration into Too short, TOO long, Repetitive
 
 Approach / Logic Used:
 I created a python program that takes the number of songs and their duartions as input using a list. First, I validated the inputs by checking if any duration is less than or equal to zero and marked the playlist as invalid if found. This i calculated the total duration using sum() to check whether the playlist is Too short or Too long.I checked for repetition by comparing the length of the list with unique values.  Finally ,based on all conditions ,i categorized the playlist and displayed the result.
+
+
 Test Cases:
+
 Input: Enter number of songs: 4
 Enter duration: 180
 Enter duration: 200
