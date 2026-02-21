@@ -1,23 +1,13 @@
-Day 06 - Smart Playlist Analyzer
+Day 05 - Smart Transport Load Balancing System`
 
 Problem Statement:
 
-Classify a playlist based on songs duration into Too short, TOO long, Repetitive, Balanced, Irregular, or Invalid Playlist.
+Design a Python program to classify the weights of packages into load categories and determine a Personal Load Index (PLI) based on the length of a given name (excluding spaces). According to the PLI value, apply certain rules to adjust the categories and print the final results along with the number of items affected.
 
 Approach / Logic Used:
-I created a python program that takes the number of songs and their duartions as input using a list. First, I validated the inputs by checking if any duration is less than or equal to zero and marked the playlist as invalid if found. This i calculated the total duration using sum() to check whether the playlist is Too short or Too long.I checked for repetition by comparing the length of the list with unique values.  Finally ,based on all conditions ,i categorized the playlist and displayed the result.
 
+The program begins by calculating the number of characters in the given name (excluding spaces) to determine the Personal Load Index (PLI) through the modulus operation.
+The program then proceeds to classify the weights according to their categories, which include Very Light, Normal Load, Heavy Load, Overload, and Invalid through the use of conditional statements. Lastly, the program alters the categories according to the PLI value and displays the final results.
 
-Test Cases:
-
-Input: Enter number of songs: 4
-Enter duration: 180
-Enter duration: 200
-Enter duration: 220
-Enter duration: 210
-Total Duration: 810 seconds
-Songs: 4
-Category: Balanced Playlist
-Recommendation: Good listening session
 
 
